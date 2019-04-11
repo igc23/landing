@@ -15,7 +15,3 @@ jobs:
       - run:
           name: Install dependencies
           command: npm install
-
-      - run:
-          name: Test
-          command: ng test
