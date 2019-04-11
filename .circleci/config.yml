@@ -13,8 +13,8 @@ jobs:
           command: npm install -g @angular/cli
 
       - run:
-          name: Move to project folder
-          command: ls -la
+          name: Install dependencies
+          command: npm install
 
       - run:
           name: Test
