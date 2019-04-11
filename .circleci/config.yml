@@ -3,14 +3,14 @@ version: 2
 jobs:
   build:
     docker:
-      - image: debian:stretch
+      - image: node:carbon-jessie
 
     steps:
       - checkout
 
       - run:
-          name: Start
-          command: echo Hello, world.
+          name: Install Angular CLI
+          command: npm install -g @angular/cli
 
       - run:
           name: Test
