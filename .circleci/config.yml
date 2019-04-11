@@ -8,6 +8,10 @@ jobs:
     steps:
       - checkout
 
-      - run:
-          name: Greeting
+      - start:
+          name: [Step] - Start
           command: echo Hello, world.
+
+      - test:
+          name: [Step] - Test
+          command: ng test
