@@ -9,9 +9,9 @@ jobs:
       - checkout
 
       - start:
-          name: [Step] - Start
+          name: [Step] Start
           command: echo Hello, world.
 
       - test:
-          name: [Step] - Test
+          name: [Step] Test
           command: ng test
