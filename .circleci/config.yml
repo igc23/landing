@@ -8,10 +8,10 @@ jobs:
     steps:
       - checkout
 
-      - start:
+      - run:
           name: Start
           command: echo Hello, world.
 
-      - test:
+      - run:
           name: Test
           command: ng test
