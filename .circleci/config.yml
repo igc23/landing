@@ -5,6 +5,9 @@ jobs:
     docker:
       - image: node:carbon-jessie
 
+    parallelism: 2
+    working_directory: ~/landing
+
     steps:
       - checkout
 
